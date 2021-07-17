@@ -19,7 +19,7 @@
     "web-vitals": "^1.1.2",
     "yup": "0.32.9"
   },
-  "homepage": "http://SabarishE.github.io/React-task-final",
+ 
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
