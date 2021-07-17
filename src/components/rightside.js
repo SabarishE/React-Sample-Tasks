@@ -49,7 +49,7 @@ export function Rightside() {
         <Topnav />
 
         <div id="cheat-block">
-          <Link to="/cheatsheet">
+          <Link to="/React-task-final/cheatsheet">
             <button>CHEATSHEET</button>
           </Link>
         </div>
@@ -127,7 +127,7 @@ export function Rightside() {
         </Switch>
 
         <Switch>
-          <Route path="/cheatsheet">
+          <Route path="/React-task-final/cheatsheet">
             <Cheatsheet />
           </Route>
         </Switch>
