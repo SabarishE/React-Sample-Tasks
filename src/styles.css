@@ -1,0 +1,858 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 0;
+}
+
+/* ----------cheatsheet starts----------- */
+#cheat-block {
+  padding: 10px;
+  background-color: #f08380;
+}
+
+#cheat-block button {
+  width: 150px;
+  color: white;
+  background-color: black;
+  border: none;
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+#cheat-block button:hover {
+  box-shadow: 0 0 3px 3px white;
+  cursor: pointer;
+}
+
+#cheatsheet {
+  background-color: #e0d9d9;
+  padding: 10px 0px;
+  font-size: 1.6rem;
+}
+
+#cheatsheet li {
+  font-size: 1rem;
+}
+#cheatsheet h3,
+h5 {
+  text-align: left;
+}
+
+/* ----------cheatsheet ends------------ */
+
+/* ----------- left-nav starts  ------------ */
+
+#sidenav-appear {
+  width: 16%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  color: white;
+  background-color: #4e73df;
+  float: left;
+  position: fixed;
+  top: 0;
+}
+
+.admin-block {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+  font-size: 1.5rem;
+}
+.ninety {
+  margin: auto;
+  width: 90%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.eighty {
+  width: 75%;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.navlg {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.left {
+  text-align: left;
+  font-size: 0.8rem;
+}
+.i-m {
+  margin-right: 0.5rem;
+}
+
+li {
+  text-align: left;
+  list-style-type: none;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+.lightcaps {
+  font-size: 0.7rem;
+  color: rgb(173, 187, 224);
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+.light {
+  font-size: 0.7rem;
+  color: rgb(158, 152, 152);
+}
+
+.navhov {
+  color: rgb(216, 217, 221);
+}
+.navhov:hover {
+  color: white;
+}
+
+hr {
+  background-color: rgb(144, 151, 173);
+  width: 80%;
+}
+
+/* -------------left-nav-ends -------------- */
+
+/* ---------------- RIGHT SIDE  starts-------------- */
+
+#rigthside {
+  width: 83.9%;
+  height: 100%;
+  padding: 0px;
+  float: right;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* -------- top nav starts  ---------- */
+#u-topnav {
+  height: 50px;
+  padding: 5px 25px;
+  background-color: #f8d2d2;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.searchblock {
+  display: flex;
+  align-items: center;
+  height: 36px;
+  width: 70%;
+  box-sizing: border-box;
+}
+.searchblock > input {
+  height: 30px;
+  width: 50%;
+  background-color: rgb(239, 240, 245);
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+#searchicon {
+  background-color: #df4e66;
+
+  color: white;
+  width: 33px;
+  height: 33px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#topnav-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+}
+#nav-icons {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 2px;
+  color: rgb(161, 159, 159);
+}
+.icon-image {
+  width: 25px;
+  height: 25px;
+}
+.search-img {
+  width: 18px;
+  height: 18px;
+}
+#log {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 35%;
+  border-left: 1px solid rgb(194, 183, 183);
+  padding-left: 25px;
+  font-size: 0.9rem;
+  color: #646568;
+}
+
+/* ------------ top nav ends ------------- */
+
+/* --------------- user buttons tab starts--------------- */
+
+#user-btn {
+  background-color: rgb(233, 57, 57);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+  color: white;
+  box-shadow: 0 3px 5px 0 rgb(175, 175, 175);
+}
+#user-btn button {
+  width: 150px;
+  height: 22px;
+  border: none;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+}
+
+#user-btn button:hover {
+  cursor: pointer;
+
+  background-color: white;
+  color: black;
+  transition: 0.3s;
+}
+/* -------- user buttons tab ends --------- */
+
+/* ---------------- ADD and EDIT user form ------------ */
+
+#add-user-div,
+#edit-user-div,
+#userlist {
+  padding-bottom: 80px;
+}
+#form,
+#edit-form {
+  width: 80%;
+  margin: auto;
+
+  border-radius: 5px;
+  padding: 10px;
+  text-align: left;
+  font-weight: bold;
+}
+#edit-form {
+  background-color: rgb(93, 230, 127);
+}
+#form {
+  background-color: #a9b9e7;
+}
+#form input,
+#edit-form input {
+  width: 95%;
+  height: 1.5rem;
+  border: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#form #submit-btn {
+  width: 25%;
+  margin-left: 37.5%;
+  background-color: rgb(81, 71, 218);
+
+  color: white;
+  font-size: 1.2rem;
+  border: 1px solid;
+  border-radius: 5px;
+  height: 2rem;
+}
+#form #submit-btn:hover {
+  color: rgb(18, 11, 112);
+  background-color: #c6cfeb;
+  transition: 0.4s;
+}
+
+#edit-form #edit-btn {
+  width: 25%;
+  margin-left: 37.5%;
+  background-color: #098323;
+  height: 2rem;
+  color: white;
+  font-size: 1.2rem;
+  border: 1px solid;
+  border-radius: 5px;
+}
+#edit-form #edit-btn:hover {
+  color: #098323;
+  background-color: white;
+  transition: 0.4s;
+}
+
+/* ---------------- ADD and EDIT user form ends ------------ */
+
+/* --------------userlist starts--------------- */
+
+/* ----- details of user with path starts ---- */
+
+#details-user {
+  width: 80%;
+
+  border: 1px solid;
+  margin: 20px auto;
+  box-sizing: border-box;
+}
+
+#details-user-top {
+  background: #4e73df;
+  color: white;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+#path-div {
+  background-color: rgb(248, 248, 149);
+  box-shadow: border-box;
+  padding: 10px;
+}
+#path-div h4 {
+  border: 1px solid;
+}
+#path-div h3 {
+  font-style: italic;
+  color: red;
+}
+#path-div h2 {
+  background-color: red;
+  width: 80%;
+  margin: 0px auto;
+  border-radius: 8px;
+  color: white;
+}
+
+/* ----- details of user with path ends---- */
+
+#read-user {
+  padding: 30px 0px;
+
+  height: 100%;
+}
+#userlist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+#userdetail {
+  min-width: 200px;
+  border: 1px solid;
+  margin-bottom: 15px;
+  padding: 10px 0px;
+  background-color: #d7dae6;
+  border: none;
+  border-radius: 10px;
+}
+#userdetail:hover {
+  box-shadow: 0 0 10px 5px #182a5e;
+  transition: 0.3s;
+}
+.th {
+  background-color: #182a5e;
+  color: white;
+  padding: 0px 3px;
+}
+.td {
+  color: #182a5e;
+  font-weight: bold;
+}
+
+/* ----- DETAILS button --------- */
+#details-btn {
+  background-color: #c9c62b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 2px;
+  width: 50%;
+  margin-top: 5px;
+}
+
+#details-btn:hover {
+  box-shadow: 0 0 2px 2px rgb(160, 158, 29);
+}
+
+/* ----- EDIT button --------- */
+
+#edit-btn {
+  background-color: #4e73df;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 2px;
+  width: 50%;
+  margin-top: 5px;
+}
+#edit-btn:hover {
+  box-shadow: 0 0 2px 2px rgb(7, 61, 105);
+}
+#link-edit {
+  text-decoration: none;
+  color: white;
+}
+
+/* ----- DELETE button --------- */
+
+#delete-btn {
+  background-color: rgb(238, 51, 88);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 2px;
+  width: 50%;
+  margin-top: 5px;
+}
+
+#delete-btn:hover {
+  box-shadow: 0 0 2px 2px red;
+}
+/* --------------userlist ends--------------- */
+
+/* --------- products and cart starts ------------ */
+
+#products {
+  background-color: #b30d0d;
+  color: white;
+  padding: 10px;
+  box-shadow: 0 5px 8px -3px rgb(63, 63, 63);
+}
+
+#card-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+  justify-content: center;
+  padding-bottom: 200px;
+}
+
+#products-btn {
+  height: 35px;
+  font-weight: bolder;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#cart-btn {
+  height: 35px;
+  font-weight: bolder;
+  background-color: black;
+  color: white;
+  border: none;
+  box-sizing: border-box;
+
+  font-weight: bolder;
+  border-radius: 5px;
+}
+
+#products-btn:hover,
+#cart-btn:hover {
+  box-shadow: 0 0 3px 3px white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#cart-count {
+  border-radius: 50%;
+  padding: 3px;
+  margin-left: 4px;
+  font-size: 18px;
+  background-color: white;
+  color: black;
+}
+
+.caird {
+  width: 206px;
+  min-height: 250px;
+  border: 1px solid rgb(201, 195, 195);
+  background: white;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  padding-bottom: 15px;
+  position: relative;
+  box-shadow: 0 5px 5px 0 rgb(173, 172, 172);
+}
+
+#details {
+  margin: 5px;
+  font-size: large;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#productpic {
+  box-sizing: border-box;
+  width: 100%;
+  height: 137.33px;
+  background-color: rgb(194, 184, 184);
+}
+
+#cart {
+  padding-bottom: 200px;
+}
+#cartlist > li {
+  box-sizing: border-box;
+  box-shadow: 0 0 2px 5px rgb(221, 218, 218);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  min-height: 45px;
+  background: rgb(163, 147, 150);
+  padding: 5px;
+  margin: 15px auto;
+  font-size: 20px;
+  list-style-type: none;
+}
+#cartlist > button {
+  border-radius: 5px !important;
+}
+
+#remove-btn {
+  background-color: crimson;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#remove-btn:hover {
+  box-shadow: 0 0 3px 3px white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#check-out-btn {
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #861d1d;
+}
+
+#check-out-btn:hover {
+  box-shadow: 0 0 3px 3px #ac5e5e;
+  transition: 0.3s;
+  cursor: pointer;
+}
+/* --------- products and cart ends ------------ */
+
+/* -------- right-side >> content starts  ---------- */
+
+#content {
+  margin: 1.5rem;
+  box-sizing: border-box;
+}
+
+.admin-div1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.admin-div1 h1 {
+  color: grey;
+  padding: 0;
+}
+.admin-div1 button {
+  display: flex;
+  align-items: center;
+  background-color: rgb(80, 80, 248);
+  border: none;
+  border-radius: 3px;
+  color: white;
+}
+
+/* ------admin div-2 ------------ */
+
+.admin-div2 {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.admin-cards {
+  width: 23%;
+  height: 100px;
+  box-shadow: 3px 0px 9px 0 rgb(121, 121, 121);
+  box-sizing: border-box;
+  padding: 1.5rem 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  border-left: 4px solid blue;
+  border-radius: 3.5px;
+}
+
+.admin-cards h5 {
+  color: blue;
+  margin: 0;
+  padding: 0;
+}
+.admin-cards h2 {
+  color: rgb(136, 138, 136);
+  margin: 0;
+  padding: 0;
+}
+.cardicon {
+  color: rgb(187, 184, 184);
+  font-size: 3rem;
+}
+
+/* -------- ( dashboard )content ends  ---------- */
+
+/* -------- chart starts  ---------- */
+
+#chart-intro {
+  text-align: left;
+  color: grey;
+  width: 100%;
+}
+#chart-intro h1 {
+  color: grey;
+
+  margin: 0;
+}
+
+#chart-flex {
+  padding: 25px;
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.chart-title {
+  width: 100%;
+  background-color: rgb(250, 245, 245);
+  text-align: left;
+  color: rgb(58, 58, 250);
+  padding: 10px 0px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgb(226, 224, 224);
+  font-weight: bold;
+  margin-top: 0;
+  border-radius: 10px 10px 0 0;
+  padding-left: 10px;
+}
+
+#chart-1 {
+  width: 65%;
+  height: 60vh;
+
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px 10px rgb(238, 235, 235);
+  margin-bottom: 25px;
+}
+#Line {
+  height: 80%;
+  padding: 10px;
+}
+
+#chart-2 {
+  width: 30%;
+  height: 60vh;
+
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px 10px rgb(238, 235, 235);
+  margin-bottom: 25px;
+}
+#Doughnut {
+  height: 80%;
+  padding: 10px;
+}
+
+#chart-3 {
+  width: 65%;
+  height: 60vh;
+
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px 10px rgb(238, 235, 235);
+  margin-bottom: 25px;
+}
+
+#Bar {
+  height: 80%;
+  padding: 10px;
+}
+
+/* -------- chart ends  ---------- */
+
+/* ------------- global media ------------- */
+.mv {
+  display: none;
+}
+
+@media screen and (max-width: 1320px) {
+  #rigthside {
+    width: 83.6%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .admin-cards {
+    width: 46%;
+    margin-bottom: 20px;
+  }
+  #chart-1,
+  #chart-2,
+  #chart-3 {
+    width: 100%;
+  }
+  .user-disappear {
+    padding: 0px;
+    margin: 0;
+  }
+  .navlg {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 888px) {
+  #log {
+    margin-right: 15px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .mv {
+    display: inline;
+  }
+  .mv-disappear {
+    display: none;
+  }
+  #path-div h2 {
+    width: 95%;
+  }
+
+  #sidenav-appear {
+    position: relative;
+    width: 50%;
+    z-index: 2;
+  }
+  .u-sidenav {
+    left: 0;
+    transition: 350ms;
+  }
+
+  .u-sidenav.active {
+    left: -100%;
+  }
+  .App {
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+  #rigthside {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    margin-top: 0;
+    z-index: 1;
+  }
+
+  .admin-cards {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 750px) and (min-width: 498px) {
+  .ap {
+    display: inline;
+  }
+  .mv {
+    display: inline;
+  }
+  .si {
+    display: none;
+  }
+
+  #sidenav-appear {
+    position: relative;
+    width: 25%;
+    z-index: 2;
+  }
+  .u-sidenav {
+    left: 0;
+    transition: 350ms;
+  }
+
+  .u-sidenav.active {
+    left: -100%;
+  }
+  .App {
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+  #rigthside {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    margin-top: 0;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 498px) and (min-width: 425px) {
+  .mv {
+    display: inline;
+  }
+  .mv-disappear {
+    display: none;
+  }
+
+  #sidenav-appear {
+    position: relative;
+    width: 40%;
+    z-index: 2;
+  }
+
+  .u-sidenav {
+    left: 0;
+    transition: 350ms;
+  }
+
+  .u-sidenav.active {
+    left: -100%;
+  }
+  .App {
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+  #rigthside {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    margin-top: 0;
+    z-index: 1;
+  }
+}
